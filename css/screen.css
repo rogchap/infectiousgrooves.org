@@ -1,0 +1,215 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: url(../images/branding/bg.png) #eee;
+	font: 12pt helvetica, arial, clean, sans-serif;
+	*font-size: small;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+
+h1 {
+	font-size: 120%;
+	margin-bottom: 1em;
+}
+
+p {
+	margin: 1em 0;
+	text-align: justify;
+}
+
+a {
+	color: #00a;
+}
+
+a:hover {
+	color: black;
+}
+
+a:visited {
+	color: #a0a;
+}
+
+table {
+	font-size: inherit;
+	font: 100%;
+}
+
+blockquote {
+	margin-left:1em;
+}
+
+ol, ul {
+	list-style: none;
+	margin:0px;
+}
+
+/*****************************************************************************/
+/*
+/* Header
+/*
+/*****************************************************************************/
+
+.header-container {
+	border-bottom:1px solid #999;
+}
+
+.header {
+	width:960px;
+	height:3em;
+	margin: 0 auto;
+	padding: 1em 0;
+}
+
+.header div.navigation {
+	float:right;
+	clear:right;
+}
+
+ul.nav {
+	
+	padding: 8px 3px 8px 2px;
+	font-size: 14pt;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 white;
+	overflow: auto;
+	
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#FCFCFC',endColorstr='#ECECEC');
+	background: -webkit-gradient(linear,0% 0,0% 100%,from(#FCFCFC),to(#E8E8E8));
+	background: -moz-linear-gradient(270deg,#FCFCFC,#ECECEC);
+	border-color: #EEE;
+	border: 1px solid #E9E9E9;
+	border-bottom-color: whiteSmoke;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+ul.nav li {
+	list-style-type: none;
+	display: inline;
+	margin: 0;
+	padding: 0 11px 0 13px;
+	background: url(../images/branding/nav-rule.png) 0 50% no-repeat;
+}
+
+ul.nav li:first-child {
+	background: transparent;
+}
+
+ul.nav li a {
+	color:#ff9933;
+	text-decoration:none;
+} 
+
+ul.nav li a:hover {
+	text-decoration:underline;
+}
+
+/*****************************************************************************/
+/*
+/* Gallery
+/*
+/*****************************************************************************/
+
+.gallery-container {
+	background: url(../images/branding/bg_darker.png) #ccc;
+	border-top:3px solid #ccc;
+	border-bottom:1px solid #ccc;
+	padding-top:2em;
+	text-align:center;
+}
+
+.gallery {
+	width:960px;
+	margin:0 auto;
+}
+
+.slides_container {
+	position:relative;
+	width: 570px;
+	height: 270px;
+	overflow: hidden;
+}
+
+#slides {
+	width:570px;
+	margin: 0 auto;
+	float: left;
+	position: relative;
+	top: -327px;
+	left: 195px;
+}
+
+#slides .next, #slides .prev {
+	position:relative;
+	top:-165px;
+}
+
+#slides .next {
+	float:right;
+	right:-39px;
+}
+
+#slides .prev {
+	float:left;
+	left:-39px;
+}
+
+#slides ul.pagination {
+	width:42px;
+	margin: 1.5em auto 3em auto;
+}
+
+#slides ul.pagination li {
+	float: left;
+	margin: 0 1px;
+	list-style: none;
+}
+
+#slides ul.pagination li a {
+	display: block;
+	width: 12px;
+	height: 0;
+	padding-top: 12px;
+	background-image: url(../images/branding/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+#slides ul.pagination li.current a {
+	background-position: 0 -12px;
+}
+
+/*****************************************************************************/
+/*
+/* Main Content
+/*
+/*****************************************************************************/
+
+.main-content {
+	width:960px;
+	margin:2em auto 3em auto;
+	clear:both;
+	position:relative;
+	top:-300px;
+}
