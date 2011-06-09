@@ -37,7 +37,7 @@
 	<div class="site">
 		<div class="header-container">
 			<div class="header">
-				<div class="logo"></div>
+				<div class="logo"><img src="/images/branding/logo.png" alt="Infectious Grooves logo"></div>
 				<div class="navigation">
 					<ul class="nav">
 						<li><a href="/">Home</a></li>
@@ -51,21 +51,35 @@
 		</div>
 		<div class="gallery-container">
 			<div class="gallery">
-				<img src="/images/branding/frame.png" width="739" height="341" alt="photo frame">
-				<div id="slides">
-					<div class="slides_container">
-						<img src="http://slidesjs.com/examples/standard/img/slide-1.jpg" width="570" height="270" alt="Slide 1">
-						<img src="http://slidesjs.com/examples/standard/img/slide-2.jpg" width="570" height="270" alt="Slide 2">
-						<img src="http://slidesjs.com/examples/standard/img/slide-4.jpg" width="570" height="270" alt="Slide 4">
-					</div>
-					<a href="#" class="prev"><img src="/images/branding/arrow-prev.png" width="24" height="43" alt="arrow prev"></a>
-					<a href="#" class="next"><img src="/images/branding/arrow-next.png" width="24" height="43" alt="arrow next"></a>
+				<div class="frame">
+					<img class="photo-frame" src="/images/branding/frame.png" width="739" height="341" alt="photo frame">
+					<div id="slides">
+						<div class="slides_container">
+							{% for slide in page.slides %}
+								<img src="{{ slide }}" width="570" height="270" alt="Slide {{ forloop.index }}">
+								{% endfor %}
+							</div>
+							<a href="#" class="prev"><img src="/images/branding/arrow-prev.png" width="24" height="43" alt="arrow prev"></a>
+							<a href="#" class="next"><img src="/images/branding/arrow-next.png" width="24" height="43" alt="arrow next"></a>
+				</div>
 				</div>
 			</div>
 		</div>
 		<div class="main-content">
+			<div class="col-left">
 			{{ content }}
+			</div>
+			<div class="col-right">
+				{% if page.panel == 'home' %}
+				{% include panel_home.html %}
+				{% endif %}
+			</div>
 		</div>
+		<div class="footer-container">
+			<div class="footer">
+				&copy; {{ 'now' | date: "%Y" }} Infectious Grooves. All rights reserved.
+			</div>
+		<div>
 	</div>
 </body>
 </html>

@@ -2,4 +2,4 @@ url: http://infectiousgrooves.org
 markdown: rdiscount
 permalink: pretty
 pygments: true
-exclude: ['Rakefile.rb', 'CNAME', 'README.markdown']
+exclude: ['design', 'Rakefile.rb', 'CNAME', 'README.markdown']
