@@ -21,11 +21,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-size: 100%;
+	text-shadow: 1px 1px 0 white;
+	color:#ff9933;
 }
 
 h1 {
-	font-size: 120%;
+	font-size: 140%;
 	margin-bottom: 1em;
+	border-bottom:solid 1px #ccc;
+	padding-bottom:0.5em;
 }
 
 p {
@@ -33,16 +37,12 @@ p {
 	text-align: justify;
 }
 
-a {
-	color: #00a;
-}
-
 a:hover {
 	color: black;
 }
 
-a:visited {
-	color: #a0a;
+a:visited, a:link {
+	color: #333;
 }
 
 table {
@@ -237,6 +237,39 @@ ul.nav li a:hover {
 .main-content div.col-right {
 	width:260px;
 	float:right;
+}
+
+.main-content {
+	font-family:Georgia, serif;
+}
+
+.main-content h1, 
+.main-content h2, 
+.main-content h3, 
+.main-content h4, 
+.main-content h5, 
+.main-content h6 {
+
+	font-family: helvetica, arial, clean, sans-serif;
+}
+
+.main-content ul {
+	margin: 0 0 1em 0;
+}
+
+.main-content li {
+	margin-left:2em;
+	list-style-type:square;
+}
+
+span.name {
+	text-align:right;
+	display:block;
+	margin-top: 0.3em;
+}
+
+.main-content img {
+	margin: 1em 0;
 }
 
 /*****************************************************************************/
